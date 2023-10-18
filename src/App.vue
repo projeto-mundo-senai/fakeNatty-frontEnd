@@ -24,3 +24,14 @@ import PaginaInicial from './components/PaginaInicial.vue';
   </div>
  
 </template>
+
+
+<style>
+
+body{
+
+ background-color: #282828 !important; 
+
+}
+
+</style>

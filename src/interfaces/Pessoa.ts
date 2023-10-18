@@ -1,4 +1,4 @@
-import { Dieta } from "./Dieta";
+import type { Dieta } from "./Dieta";
 
 export interface Pessoa {
 
