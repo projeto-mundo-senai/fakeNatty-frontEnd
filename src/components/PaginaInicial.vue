@@ -4,13 +4,13 @@
     <nav class="navbar border-bottom border-body" data-bs-theme="dark">
       <div class="container-fluid">
         <div class="justificarNavBar">
-          <a class="navbar-brand item" href="./GerarDieta.vue">
-            <img src="./imagens/logo-branca.png" alt="aa" width="80" height="80">
-          </a>
+          <RouterLink class="navbar-brand item" to="/"> 
+            <img src="./imagens/logo-branca.png" alt="aa" width="120" height="80">
+          </RouterLink>
           
           <nav class="navbar border-body">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Faça seu plano aqui!</a>
+              <RouterLink class="navbar-brand" to="/gerarDieta">Faça seu plano aqui!</RouterLink>
             </div>
           </nav>
           
@@ -27,24 +27,31 @@
     <div class="alinhaImagemETexto">
       
       <img class="imagemEsquerda" src="./imagens/aristotelesSemFundo.png" alt="penis" width="360" height="360"> 
-      <p class="fonte">
-        
-          Nenhum cidadão tem o direito de ser um amador em matéria de 
-        treinamento físico. Que desgraça é para o homem 
-        envelhecer sem nunca ver a beleza e a força do que o seu corpo é 
-        capaz. 
-        
-        
+      
+      <div class="fonte">
 
-                
+        <p>
+        
+        "Nenhum cidadão tem o direito de ser um amador em matéria de 
+      treinamento físico. Que desgraça é para o homem 
+      envelhecer sem nunca ver a beleza e a força do que o seu corpo é 
+      capaz". 
+      
+      
+
+              
+    </p>
+
+    
+      <p>
+
+          Sócrates.
+
       </p>
 
+      </div>
+
       
-        <p class="item">
-
-            Sócrates.
-
-        </p>
       
       
     </div>
@@ -69,6 +76,7 @@
 
 .alinhaImagemETexto{
   
+  
   max-width: 100%;
   height: auto;
   display: flex;
@@ -92,13 +100,15 @@
 .item {
   
   
-  padding: 100px;
+  padding: 50px;
   margin-bottom: 5px;
 
 }
 
 .fonte{
   
+
+  text-align: center;
   max-width: 50%  
 }
 

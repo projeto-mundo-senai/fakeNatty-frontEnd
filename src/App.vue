@@ -13,10 +13,9 @@ import PaginaInicial from './components/PaginaInicial.vue';
 
       <div class="col">
 
-        <PaginaInicial>
-
-          
-      </PaginaInicial>
+    <RouterView> 
+      
+    </RouterView>
 
       </div>
 
