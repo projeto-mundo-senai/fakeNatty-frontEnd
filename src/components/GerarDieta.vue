@@ -27,22 +27,29 @@
 
 </div>
 
-<div class="mb-3">
+<div class="cadastraPessoa">
+
+  <div class="mb-3">
     <label for="nome" class="form-label">Nome </label>
     <input type="nome" class="form-control" id="nomeId" aria-describedby="nomeHelp" v-model="dadosDto.pessoaDto.nome">
     <div id="nomeAjuda" class="form-text">Digite seu nome aqui</div>
   </div>
   <div class="mb-3">
     <label for="email" class="form-label">Endereço de email: </label>
-    <input type="email" class="form-control" id="emailId" aria-describedby="emailHelp">
+    <input type="email" class="form-control" id="emailId" aria-describedby="emailHelp" v-model="dadosDto.pessoaDto.email">
     <div id="emailAjuda" class="form-text">Nós não vamos compartilhar seu email</div>
   </div>
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-
+  <div>
+<label for="cars">Intensidade atividade fisica: </label>
+<select name="cars" id="cars">
+  <option value="leve">Leve</option>
+  <option value="moderado">Moderado</option>
+  <option value="alto">Intenso=</option>
+  <option value="intenso">FakeNatty (Muito Intenso)</option>
+</select>
+</div>
+</div>
+  <button type="submit" class="btn btn-primary">Retire sua dieta aqui!</button>
 </template>
   
   
@@ -89,3 +96,21 @@ return {
 
 </script>
 
+<style>
+
+.cadastraPessoa{
+
+
+  
+
+
+}
+
+.form-text {
+
+  
+color: springgreen !important  ;
+
+}
+
+</style>
