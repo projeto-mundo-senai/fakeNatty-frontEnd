@@ -23,62 +23,132 @@
         </form>
       </div>
     </nav>
-
-<<<<<<< HEAD
   </div>
+
   <form @submit.prevent="salvarUsuario">
-    <div class="mb-3">
-      <label for="nome" class="form-label">Nome </label>
-      <input type="nome" class="form-control" id="nomeId" aria-describedby="nomeHelp" v-model="dadosDto.pessoaDto.nome">
-      <div id="nomeAjuda" class="form-text">Digite seu nome aqui</div>
+    <div class="cadastraPessoa">
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome </label>
+        <input type="nome" class="form-control" id="nomeId" aria-describedby="nomeHelp" v-model="dadosDto.pessoaDto.nome">
+        <div id="nomeAjuda" class="form-text">Digite seu nome aqui</div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Endereço de email: </label>
+        <input type="email" class="form-control" id="emailId" aria-describedby="emailHelp"
+          v-model="dadosDto.pessoaDto.email">
+        <div id="emailAjuda" class="form-text">Nós não vamos compartilhar seu email</div>
+      </div>
+
+
+      <div class="mb-3">
+        <label for="idade" class="form-label">Idade</label>
+        <input type="number" class="form-control" id="idadeId" v-model="dadosDto.pessoaDto.idade">
+        <div id="idadeAjuda" class="form-text">Coloque sua idade em anos</div>
+      </div>
+      <div class="mb-3">
+        <label for="altura" class="form-label">Altura</label>
+        <input type="number" class="form-control" id="alturaId" v-model="dadosDto.pessoaDto.altura">
+        <div id="alturaAjuda" class="form-text">Coloque sua altura em CM</div>
+      </div>
+      <div class="mb-3">
+        <label for="peso" class="form-label">Peso</label>
+        <input type="number" class="form-control" id="pesoId" v-model="dadosDto.pessoaDto.peso">
+        <div id="pesoAjuda" class="form-text">Peso em KG</div>
+      </div>
+
+      <div class="cmb-3">
+        <label for="inputState" class="form-label">Genêro</label>
+        <select id="inputState" class="form-select" v-model="dadosDto.pessoaDto.genero">
+
+          <option value="M">Masculino</option>
+          <option value="F">Feminino</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="inputState" class="form-label">Pretenção Fisica</label>
+        <select id="inputState" class="form-select" v-model="dadosDto.pessoaDto.pretensaoFisica">
+          <option value="G">Ganhar Massa</option>
+          <option value="M">Manter Massa</option>
+          <option value="P">Perder Gordura</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="inputState" class="form-label">Nivel Atividade Fisica</label>
+        <select id="inputState" class="form-select" v-model="dadosDto.pessoaDto.nivelAtividadeFisica">
+          <option value="S">Sedentário</option>
+          <option value="M">Moderado</option>
+          <option value="A">Ativo</option>
+          <option value="F">FakeNatty</option>
+        </select>
+      </div>
     </div>
-    <div class="mb-3">
-      <label for="email" class="form-label">Endereço de email: </label>
-      <input type="email" class="form-control" id="emailId" aria-describedby="emailHelp">
-      <div id="emailAjuda" class="form-text">Nós não vamos compartilhar seu email</div>
+
+    <div class="alimentacao">
+
+      <div class="mb-3">
+        <div class="card-header">Condições Alimentar</div>
+        <span>Você é vegetariano?</span>
+        <div class="form-check">
+
+
+        </div>
+
+        <input type="radio" name="vegetariano" value="true"><span>Sim</span>
+
+        <input type="radio" name="vegetariano" value="true"><span>Não</span>
+
+      </div>
+
+      <div class="form-check">
+
+        <span>Você é vegano?</span>
+
+      </div>
+
+      <input type="radio" name="vegano" value="1"><span>Sim</span>
+
+      <input type="radio" name="vegano" value="0"><span>Não</span>
+
+      <div class="form-check">
+
+        <span>Você é Intolerante a Glutem?</span>
+
+      </div>
+
+      <input type="radio" name="glutem" value="1"><span>Sim</span>
+
+      <input type="radio" name="glutem" value="0"><span>Não</span>
+
+      <div class="form-check">
+
+        <span>Você é Intolerante a Lactose?</span>
+
+      </div>
+
+      <input type="radio" name="lactose" value="1"><span>Sim</span>
+
+      <input type="radio" name="lactose" value="0"><span>Não</span>
+
+
+
+
     </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary botao">Retire sua dieta aqui!</button>
   </form>
-=======
-</div>
-
-<div class="cadastraPessoa">
-
-  <div class="mb-3">
-    <label for="nome" class="form-label">Nome </label>
-    <input type="nome" class="form-control" id="nomeId" aria-describedby="nomeHelp" v-model="dadosDto.pessoaDto.nome">
-    <div id="nomeAjuda" class="form-text">Digite seu nome aqui</div>
-  </div>
-  <div class="mb-3">
-    <label for="email" class="form-label">Endereço de email: </label>
-    <input type="email" class="form-control" id="emailId" aria-describedby="emailHelp" v-model="dadosDto.pessoaDto.email">
-    <div id="emailAjuda" class="form-text">Nós não vamos compartilhar seu email</div>
-  </div>
-  <div>
-<label for="cars">Intensidade atividade fisica: </label>
-<select name="cars" id="cars">
-  <option value="leve">Leve</option>
-  <option value="moderado">Moderado</option>
-  <option value="alto">Intenso=</option>
-  <option value="intenso">FakeNatty (Muito Intenso)</option>
-</select>
-</div>
-</div>
-  <button type="submit" class="btn btn-primary">Retire sua dieta aqui!</button>
->>>>>>> a4f1139d454f07a1f440645596dd9da0cd572742
 </template>
+
+
+
 <script lang="ts">
+
 
 import type { Dieta } from '@/interfaces/Dieta';
 import type { Pessoa } from '@/interfaces/Pessoa';
-import http from '../http';
+import http from '@/http'
 import { defineComponent } from 'vue';
 
 export default defineComponent({
+
   name: 'gerarDieta',
   data() {
     return {
@@ -86,36 +156,42 @@ export default defineComponent({
         dietaDto: {
         } as Dieta,
         pessoaDto: {
-          peso: 80,
-          altura: 170,
-          idade: 20
+
+
         } as Pessoa
       }
     }
   },
   methods: {
     async salvarUsuario() {
-      await http.post("/fakenatty", this.dadosDto)
+      const response = await http.post("/fakenatty", this.dadosDto)
+      this.$router.push("/mostrarDieta/" + response.data.dietaDto.caminhoArquivo)
     }
   }
 })
+
 </script>
 
 <style>
+.botao {
 
-.cadastraPessoa{
-
-
-  
-
+  margin-left: 40%;
 
 }
+
+.cadastraPessoa {}
 
 .form-text {
 
-  
-color: springgreen !important  ;
+  color: springgreen !important;
 
 }
 
+.separaItensIguais {
+
+  display: flex;
+  align-items: center;
+  margin: 15px;
+
+}
 </style>
