@@ -82,7 +82,7 @@
   display: flex;
   align-items: center;
   max-width: 100%;
-  margin-bottom: 0%;
+  margin-bottom: 10px;
   
   
 }
@@ -107,9 +107,9 @@
 
 .fonte{
   
-
+  
   text-align: center;
-  max-width: 50%  
+  max-width: 60%  
 }
 
 .imagemEsquerda{
@@ -118,5 +118,8 @@
   margin-right: 10px;
 
 }
+
+
+
 </style>
 
